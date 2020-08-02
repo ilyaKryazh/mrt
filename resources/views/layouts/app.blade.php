@@ -24,7 +24,7 @@
     <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
     <meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <link href="styles/build.min.css" rel="stylesheet">
+    <link href="{{asset('styles/build.min.css')}}" rel="stylesheet">
   </head>
   <body class="page">
     <div class="page__inner">
@@ -42,31 +42,31 @@
                   <li class="main-menu__item"><a class="main-menu__link" href="#0">О компании</a>
                     <div class="main-menu__sub">
                       <ul class="main-menu__sub-list">
-                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/product-detail.html">Товар</a></li>
-                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/about.html">О компании</a></li>
-                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/helium.html">Гелий</a></li>
-                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/cryoservice.html">Криосервис</a></li>
-                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/rf-coil.html">Радиочастотная катушка</a></li>
-                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/adsorber.html">Адсорбер</a></li>
-                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/cooling-head.html">Охлаждающая головка</a></li>
-                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/rf-cell.html">Радиочастотная клетка</a></li>
-                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/mri-room.html">Особенности клетки Фарадея для кабинета МРТ</a></li>
+                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/product-detail">Товар</a></li>
+                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/about">О компании</a></li>
+                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/helium">Гелий</a></li>
+                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/cryoservice">Криосервис</a></li>
+                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/rf-coil">Радиочастотная катушка</a></li>
+                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/adsorber">Адсорбер</a></li>
+                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/cooling-head">Охлаждающая головка</a></li>
+                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/rf-cell">Радиочастотная клетка</a></li>
+                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/mri-room">Особенности клетки Фарадея для кабинета МРТ</a></li>
                       </ul>
                     </div>
                   </li>
-                  <li class="main-menu__item"><a class="main-menu__link" href="/catalog.html">Каталог</a></li>
-                  <li class="main-menu__item"><a class="main-menu__link" href="/service.html">Сервис</a></li>
-                  <li class="main-menu__item"><a class="main-menu__link" href="/trade-in.html">trade-in</a></li>
+                  <li class="main-menu__item"><a class="main-menu__link" href="/catalog">Каталог</a></li>
+                  <li class="main-menu__item"><a class="main-menu__link" href="/service">Сервис</a></li>
+                  <li class="main-menu__item"><a class="main-menu__link" href="/trade-in">trade-in</a></li>
                   <li class="main-menu__item"><a class="main-menu__link" href="#0">Бизнес</a>
                     <div class="main-menu__sub">
                       <ul class="main-menu__sub-list">
-                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/business.html">Бизнес</a></li>
-                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/activity.html">Мероприятия</a></li>
-                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/career.html">Карьера</a></li>
+                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/business">Бизнес</a></li>
+                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/activity">Мероприятия</a></li>
+                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/career">Карьера</a></li>
                       </ul>
                     </div>
                   </li>
-                  <li class="main-menu__item"><a class="main-menu__link" href="/contacts.html">Контакты</a></li>
+                  <li class="main-menu__item"><a class="main-menu__link" href="/contacts">Контакты</a></li>
                 </ul>
               </div>
               <div class="main-nav__actions main-nav__contact-us">
@@ -118,6 +118,6 @@
   </div>
 </footer>
 </div>
-<script src="/scripts/bundle.min.js"></script>
+<script src="{{asset('scripts/bundle.min.js')}}"></script>
 </body>
 </html>
