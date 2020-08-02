@@ -16,3 +16,62 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/product-detail', function () {
+    return view('pages/company/product-detail');
+});
+Route::get('/about', function () {
+    return view('pages/company/about');
+});
+Route::get('/helium', function () {
+    return view('pages/company/helium');
+});
+Route::get('/cryoservice', function () {
+    return view('pages/company/cryoservice');
+});
+Route::get('/rf-coil', function () {
+    return view('pages/company/rf-coil');
+});
+Route::get('/adsorber', function () {
+    return view('pages/company/adsorber');
+});
+Route::get('/cooling-head', function () {
+    return view('pages/company/cooling-head');
+});
+Route::get('/rf-cell', function () {
+    return view('pages/company/rf-cell');
+});
+Route::get('/mri-room', function () {
+    return view('pages/company/mri-room');
+});
+
+Route::get('/catalog', function () {
+    return view('pages/catalog');
+});
+Route::get('/service', function () {
+    return view('pages/service');
+});
+Route::get('/trade-in', function () {
+    return view('pages/trade-in');
+});
+Route::get('/contacts', function () {
+    return view('pages/contacts');
+});
+
+Route::get('/business', function () {
+    return view('pages/business/business');
+});
+Route::get('/activity', function () {
+    return view('pages/business/activity');
+});
+Route::get('/career', function () {
+    return view('pages/business/career');
+});
+
+Route::prefix('product-details')->group(function () {
+    Route::get('philips-3-0t-achieva-mri-komplekt-premium', function () {
+        return view('/pages/product-details/philips-3-0t-achieva');
+    });
+    Route::get('philips-intera-achieva-v-kruglykh-kozhukhakh', function () {
+        return view('pages/product-details/philips-intera-achieva');
+    });
+});
