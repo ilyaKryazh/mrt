@@ -1,4 +1,4 @@
 {
-    "/js/bundle.js": "/js/bundle.js",
-    "/css/build.css": "/css/build.css"
+    "/scripts/bundle.min.js": "/scripts/bundle.min.js",
+    "/styles/build.min.css": "/styles/build.min.css"
 }
