@@ -9,12 +9,12 @@
     <div class="product-detail">
       <div class="product-detail__main content-container layout layout_screen-tablet_40-60">
         <div class="product-detail__main-content">
-          <h1 class="product-detail__title">PHILIPS 3.0T ACHIEVA MRI. КОМПЛЕКТ «ПРЕМИУМ»</h1><span class="product-detail__price">35,5 млн.рублей</span><span class="product-detail__state">Первичная установка 2010 год.</span>
-          <div class="product-detail__options"><span>Тип магнита Titan</span><span>Магнитное поле 3,0 Tл</span><span>Количество каналов 16</span><span>Градиенты 281</span><span>Уровень программного обеспечения 2.6</span></div>
-          <div class="product-detail__options"><span>Гарантия 1 год на РЧ-клетку, климатическое оборудование.</span><span>Периодическое плановое обслуживание (4 выезда)</span></div>
+          <h1 class="product-detail__title">{{$product->name}}</h1><span class="product-detail__price">{{$product->cost}} млн.рублей</span><span class="product-detail__state">{{$product->package}}</span>
+          <div class="product-detail__options"><span>Тип магнита {{$product->magnit_type}}</span><span>Магнитное поле {{$product->magnit_field}} Tл</span><span>Количество каналов {{$product->channels_number}}</span><span>Градиенты {{$product->gradient}}</span><span>Уровень программного обеспечения {{$product->program_level}}</span></div>
+          <div class="product-detail__options"><span>{{$product->options}}</div>
           <button class="btn btn_primary" type="button">Заказать</button>
         </div>
-        <div class="product-detail__main-visual"><img src="/assets/products/Philips-Achieva-3T-komplekt-premium.jpg" alt=""></div>
+    <div class="product-detail__main-visual"><img src="{{asset('uploads/'.$product->img_url)}}" alt=""></div>
       </div>
     </div>
   </section>
@@ -26,26 +26,20 @@
       <div class="content-block content-block_border_bottom">
         <div class="content-container layout layout_screen-tablet_40-60">
           <h3>Опции программного обеспечения:</h3>
-          <p>16 channel rf, 8 channel rf, bold specialist, cardiac acq, cardiac analysis, coronary specialist, diff. tensor spec. r12/r2, fibertrak specialist, real time specialist, scantools premium, scantools pro, smartexam brain, spectroscopy specialist, upgrade to r3.x, 8chrf-s — 8 channel rf, whole body specialist</p>
+        <p>{{$product->options}}</p>
         </div>
       </div>
       <div class="content-block content-block_border_bottom">
         <div class="content-container layout layout_screen-tablet_40-60">
           <h3>Комплект радиочастотных катушек:</h3>
-          <p>Torso, Cardiac, Breast, Head 8ch., Head Spine 16 ch., Knee 8ch., Flex M, Flex S, Shoulder</p>
+          <p>{{$product->coil_complect}}</p>
         </div>
       </div>
       <div class="content-block content-block_border_bottom">
         <div class="content-container layout layout_screen-tablet_40-60">
           <h3>В комплекте:</h3>
           <p>
-             Радиочастотная экранированная комната из медного листа<br>
-            Блок РЧ фильтров<br>
-            Окно для оператора<br>
-            РЧ дверь<br>
-            Кнопка экстренного вывода поля<br>
-            Электрошкафы<br>
-            Стол для пациента
+             {{$product->in_complect}}
           </p>
         </div>
       </div>
@@ -53,9 +47,7 @@
         <div class="content-container layout layout_screen-tablet_40-60">
           <h3>Климатическое оборудование:</h3>
           <p>
-             Чиллер<br>
-            Монтаж и расходные материалы<br>
-            Кондиционирование диагностического и технического помещения
+            {{$product->climat_gear}}
           </p>
         </div>
       </div>
@@ -63,19 +55,14 @@
         <div class="content-container layout layout_screen-tablet_40-60">
           <h3>Предустановочные работы и пуско-наладка:</h3>
           <p>
-             Охлаждение магнита<br>
-            Доливка гелия до необходимого уровня<br>
-            Обслуживание криогеники, замена холодной головы<br>
-            Монтаж, пуско-наладка, демонстрация изображения<br>
-            Доставка по месту монтажа<br>
-            Погрузка и разгрузка силами и грузоподъемными устройствами заказчика
+            {{$product->instalation}}
           </p>
         </div>
       </div>
       <div class="content-block">
         <div class="content-container layout layout_screen-tablet_40-60">
           <h3>Особенности:</h3>
-          <p>Обслуживался по графику квалифицированными специалистами, все оборудование в великолепном состоянии и имеет безупречный внешний вид, все катушки находятся в рабочем состоянии. Подходит для научных исследований и углубленного сканирования сердечно-сосудистой системы</p>
+          <p>{{$product->features}}</p>
         </div>
       </div>
     </div>

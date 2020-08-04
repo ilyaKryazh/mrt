@@ -28,202 +28,21 @@
         </div>
         <div class="catalog__items grid grid_ratio_4">
 
-
-
-          <a class="card card_has-popup-btn card_hover-shadow" href="/product-details/philips-3-0t-achieva-mri-komplekt-premium">
-            <div class="card__visual"><img class="card__image" src="/assets/products/Philips-Achieva-3T-komplekt-premium.jpg" alt=""/>
+            @foreach ($products as $product)
+        <a class="card card_has-popup-btn card_hover-shadow" href="{{ route('details', $product->id) }}">
+            <div class="card__visual"><img class="card__image" src="{{asset('uploads/'.$product->img_url)}}" alt=""/>
               <div class="card__ghost-btn">
                 <button class="btn btn_secondary btn_full" type="button">Подробнее</button>
               </div>
             </div>
             <div class="card__body card__body_text-center">
-              <h3 class="card__title card__title_text-upper">PHILIPS 3.0T ACHIEVA MRI.</h3>
-              <p class="card__text">35,5 млн.рублей</p>
-              <p class="card__text card__text_accent">Комплект “Премиум”</p>
+              <h3 class="card__title card__title_text-upper">{{$product->name}}</h3>
+              <p class="card__text">{{$product->cost}} млн.рублей</p>
+              <p class="card__text card__text_accent">{{$product->package}}</p>
             </div>
           </a>
+            @endforeach
 
-            <a class="card card_has-popup-btn card_hover-shadow" href="/product-details/philips-intera-achieva-v-kruglykh-kozhukhakh">
-            <div class="card__visual"><img class="card__image" src="/assets/products/Philips-Intera-Achieva-v-kruglykh-kozhukhakh1-768x1024.jpg" alt=""/>
-              <div class="card__ghost-btn">
-                <button class="btn btn_secondary btn_full" type="button">Подробнее</button>
-              </div>
-            </div>
-            <div class="card__body card__body_text-center">
-              <h3 class="card__title card__title_text-upper">PHILIPS INTERA ACHIEVA</h3>
-              <p class="card__text">19,8 млн.рублей</p>
-              <p class="card__text card__text_accent">В КРУГЛЫХ КОЖУХАХ</p>
-            </div>
-          </a>
-
-           <a class="card card_has-popup-btn card_hover-shadow" href="/product-detail.philips-achieva-1-5-t-2005.html">
-            <div class="card__visual"><img class="card__image" src="/assets/products/Philips-Achieva-15-T.png" alt=""/>
-              <div class="card__ghost-btn">
-                <button class="btn btn_secondary btn_full" type="button">Подробнее</button>
-              </div>
-            </div>
-            <div class="card__body card__body_text-center">
-              <h3 class="card__title card__title_text-upper">PHILIPS ACHIEVA 1,5 Т</h3>
-              <p class="card__text">22.5 млн.рублей</p>
-              <p class="card__text card__text_accent">2005</p>
-            </div>
-          </a>
-
-           <a class="card card_has-popup-btn card_hover-shadow" href="/product-detail.siemens-symphony-1-5t.html">
-            <div class="card__visual"><img class="card__image" src="/assets/products/siemens-symphony-1-5t.png" alt=""/>
-              <div class="card__ghost-btn">
-                <button class="btn btn_secondary btn_full" type="button">Подробнее</button>
-              </div>
-            </div>
-            <div class="card__body card__body_text-center">
-              <h3 class="card__title card__title_text-upper">SIEMENS SYMPHONY 1.5 T</h3>
-              <p class="card__text">19.5 млн.рублей</p>
-              <p class="card__text card__text_accent">Комплект эконом «Symphony»</p>
-            </div>
-          </a>
-
-           <a class="card card_has-popup-btn card_hover-shadow" href="/product-detail.dixion-xgy-oper-0-5t.html">
-            <div class="card__visual"><img class="card__image" src="/assets/products/dixion-xgy-oper-0-5t.jpg" alt=""/>
-              <div class="card__ghost-btn">
-                <button class="btn btn_secondary btn_full" type="button">Подробнее</button>
-              </div>
-            </div>
-            <div class="card__body card__body_text-center">
-              <h3 class="card__title card__title_text-upper">DIXON XGY OPER 0.5 T</h3>
-              <p class="card__text">10,7 млн.рублей</p>
-              <p class="card__text card__text_accent">Комплект эконом «DIXION»</p>
-            </div>
-          </a>
-
-          <a class="card card_has-popup-btn card_hover-shadow" href="/product-detail.philips-achieva-3-0-t-sp.html">
-            <div class="card__visual"><img class="card__image" src="/assets/products/philips-achieva-3-0-t-sp.jpg" alt=""/>
-              <div class="card__ghost-btn">
-                <button class="btn btn_secondary btn_full" type="button">Подробнее</button>
-              </div>
-            </div>
-            <div class="card__body card__body_text-center">
-              <h3 class="card__title card__title_text-upper">PHILIPS ACHIEVA 3,0 Т</h3>
-              <p class="card__text">СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ!</br> 29,0 млн.рублей</p>
-              <p class="card__text card__text_accent">АППАРАТ В НАЛИЧИИ</p>
-            </div>
-          </a>
-
-          <a class="card card_has-popup-btn card_hover-shadow" href="/product-detail.mrt-philips-intera-1-5-t.html">
-            <div class="card__visual"><img class="card__image" src="/assets/products/mrt-philips-intera-1-5-t.jpg" alt=""/>
-              <div class="card__ghost-btn">
-                <button class="btn btn_secondary btn_full" type="button">Подробнее</button>
-              </div>
-            </div>
-            <div class="card__body card__body_text-center">
-              <h3 class="card__title card__title_text-upper">PHILIPS INTERA 1,5 T</h3>
-              <p class="card__text">15 млн.рублей</p>
-              <p class="card__text card__text_accent"></p>
-            </div>
-          </a>
-
-          <a class="card card_has-popup-btn card_hover-shadow" href="/product-detail.philips-intera-achieva.html">
-            <div class="card__visual"><img class="card__image" src="/assets/products/philips-intera-achieva.jpg" alt=""/>
-              <div class="card__ghost-btn">
-                <button class="btn btn_secondary btn_full" type="button">Подробнее</button>
-              </div>
-            </div>
-            <div class="card__body card__body_text-center">
-              <h3 class="card__title card__title_text-upper">PHILIPS INTERA ACHIEVA 1,5 Т</h3>
-              <p class="card__text">17 млн.рублей</p>
-              <p class="card__text card__text_accent"></p>
-            </div>
-          </a>
-
-          <a class="card card_has-popup-btn card_hover-shadow" href="/product-detail.philips-achieva-nova-1-5-t.html">
-            <div class="card__visual"><img class="card__image" src="/assets/products/philips-achieva-nova-1-5-t.jpg" alt=""/>
-              <div class="card__ghost-btn">
-                <button class="btn btn_secondary btn_full" type="button">Подробнее</button>
-              </div>
-            </div>
-            <div class="card__body card__body_text-center">
-              <h3 class="card__title card__title_text-upper">PHILIPS ACHIEVA NOVA</br> 1,5 Т</h3>
-              <p class="card__text">22.5 млн.рублей</p>
-              <p class="card__text card__text_accent">АППАРАТ В НАЛИЧИИ</p>
-            </div>
-          </a>
-
-          <a class="card card_has-popup-btn card_hover-shadow" href="/product-detail.philips-ingenia-15-t.html">
-            <div class="card__visual"><img class="card__image" src="/assets/products/philips-ingenia-15-t.jpg" alt=""/>
-              <div class="card__ghost-btn">
-                <button class="btn btn_secondary btn_full" type="button">Подробнее</button>
-              </div>
-            </div>
-            <div class="card__body card__body_text-center">
-              <h3 class="card__title card__title_text-upper">PHILIPS INGENIA 1,5 T</h3>
-              <p class="card__text">ЦЕНА: ПО ЗАПРОСУ</p>
-              <p class="card__text card__text_accent"></p>
-            </div>
-          </a>
-
-          <a class="card card_has-popup-btn card_hover-shadow" href="/product-detail.philips-achieva-3t.html">
-            <div class="card__visual"><img class="card__image" src="/assets/products/philips-achieva-3t.jpg" alt=""/>
-              <div class="card__ghost-btn">
-                <button class="btn btn_secondary btn_full" type="button">Подробнее</button>
-              </div>
-            </div>
-            <div class="card__body card__body_text-center">
-              <h3 class="card__title card__title_text-upper">PHILIPS ACHIEVA 3,0 T</h3>
-              <p class="card__text">ЦЕНА: ПО ЗАПРОСУ</p>
-              <p class="card__text card__text_accent">2004-2010 г.в.</p>
-            </div>
-          </a>
-
-          <a class="card card_has-popup-btn card_hover-shadow" href="/product-detail.philips-ingenia-3-t.html">
-            <div class="card__visual"><img class="card__image" src="/assets/products/philips-ingenia-3-t.jpg" alt=""/>
-              <div class="card__ghost-btn">
-                <button class="btn btn_secondary btn_full" type="button">Подробнее</button>
-              </div>
-            </div>
-            <div class="card__body card__body_text-center">
-              <h3 class="card__title card__title_text-upper">PHILIPS INGENIA 3,0 T</h3>
-              <p class="card__text">ЦЕНА: ПО ЗАПРОСУ</p>
-              <p class="card__text card__text_accent"></p>
-            </div>
-          </a>
-
-          <a class="card card_has-popup-btn card_hover-shadow" href="/product-detail.siemens-symphony-15-t2.html">
-            <div class="card__visual"><img class="card__image" src="/assets/products/siemens-symphony-15-t2.jpg" alt=""/>
-              <div class="card__ghost-btn">
-                <button class="btn btn_secondary btn_full" type="button">Подробнее</button>
-              </div>
-            </div>
-            <div class="card__body card__body_text-center">
-              <h3 class="card__title card__title_text-upper">SIEMENS MAGNETOM SYMPHONY 1.5 T</h3>
-              <p class="card__text">17 МЛН. РУБЛЕЙ</p>
-              <p class="card__text card__text_accent"></p>
-            </div>
-          </a>
-
-          <a class="card card_has-popup-btn card_hover-shadow" href="/product-detail.siemens-essenza-mrt.html">
-            <div class="card__visual"><img class="card__image" src="/assets/products/siemens-essenza-mrt.jpg" alt=""/>
-              <div class="card__ghost-btn">
-                <button class="btn btn_secondary btn_full" type="button">Подробнее</button>
-              </div>
-            </div>
-            <div class="card__body card__body_text-center">
-              <h3 class="card__title card__title_text-upper">SIEMENS ESSENZA 1.5 T</h3>
-              <p class="card__text">28 МЛН. РУБЛЕЙ</p>
-              <p class="card__text card__text_accent"></p>
-            </div>
-          </a>
-
-          <a class="card card_has-popup-btn card_hover-shadow" href="/product-detail.siemens-avanto-15-t.html">
-            <div class="card__visual"><img class="card__image" src="/assets/products/siemens-avanto-15-t.jpg" alt=""/>
-              <div class="card__ghost-btn">
-                <button class="btn btn_secondary btn_full" type="button">Подробнее</button>
-              </div>
-            </div>
-            <div class="card__body card__body_text-center">
-              <h3 class="card__title card__title_text-upper">SIEMENS AVANTO 1,5 T</h3>
-              <p class="card__text">30 МЛН. РУБЛЕЙ</p>
-              <p class="card__text card__text_accent"></p>
-            </div>
-          </a>
         </div>
         <div class="catalog__footer">
           <button class="btn btn_secondary btn_adaptive" type="button">Загрузить еще</button>

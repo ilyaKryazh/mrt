@@ -16,6 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/catalog', 'ProductController@index');
+
+Route::get('/product-detail/{id}','ProductController@edit')->name('details');
+
 Route::get('/product-detail', function () {
     return view('pages/company/product-detail');
 });
@@ -44,9 +49,6 @@ Route::get('/mri-room', function () {
     return view('pages/company/mri-room');
 });
 
-Route::get('/catalog', function () {
-    return view('pages/catalog');
-});
 Route::get('/service', function () {
     return view('pages/service');
 });
