@@ -32,20 +32,10 @@ class ProductController extends AdminController
         $grid->column('img_url', __('Img url'));
         $grid->column('year', __('Year'));
         $grid->column('cost', __('Cost'));
-        $grid->column('magnit_type', __('Magnit type'));
-        $grid->column('magnit_field', __('Magnit field'));
-        $grid->column('channels_number', __('Channels number'));
-        $grid->column('gradient', __('Gradient'));
-        $grid->column('program_level', __('Program level'));
+
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
-        $grid->column('description', __('Description'));
-        $grid->column('options', __('Options'));
-        $grid->column('coil_complect', __('Coil complect'));
-        $grid->column('in_complect', __('In complect'));
-        $grid->column('climat_gear', __('Climat gear'));
-        $grid->column('instalation', __('Instalation'));
-        $grid->column('features', __('Features'));
+
 
         return $grid;
     }
@@ -96,7 +86,7 @@ class ProductController extends AdminController
         $form->text('name', __('Name'));
         $form->text('package', __('Package'));
         $form->image('img_url', __('Img url'));
-        $form->number('year', __('Year'));
+        $form->date('year', __('Year'))->format('YYYY');
         $form->decimal('cost', __('Cost'));
         $form->text('magnit_type', __('Magnit type'));
         $form->decimal('magnit_field', __('Magnit field'));
