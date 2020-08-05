@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+Route::post('/emailfooter', 'EmailController@footerForm');
 
 Route::get('/catalog', 'ProductController@index');
 
@@ -54,7 +55,7 @@ Route::get('/trade-in', function () {
 });
 Route::get('/contacts', function () {
     return view('pages/contacts');
-});
+})->name('contacts');
 
 Route::get('/business', function () {
     return view('pages/business/business');
