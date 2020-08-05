@@ -21,9 +21,6 @@ Route::get('/catalog', 'ProductController@index');
 
 Route::get('/product-detail/{id}','ProductController@edit')->name('details');
 
-Route::get('/product-detail', function () {
-    return view('pages/company/product-detail');
-});
 Route::get('/about', function () {
     return view('pages/company/about');
 });

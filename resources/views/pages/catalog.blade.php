@@ -17,15 +17,19 @@
         </div>
         <div class="catalog__filter grid grid_ratio_4">
           <div class="form-field">
-            <select class="form-field__field">
-              <option value="" data-placeholder="data-placeholder">Бренд</option>
-              <option value="1">Option 1</option>
-              <option value="2">Option 2</option>
-              <option value="3">Option 3</option>
+              <form action="/catalog">
+            <select class="form-field__field"  name="brand">
+              <option data-placeholder="data-placeholder" >{{$request->brand ?? 'Все бренды'}}</option>
+              @foreach ($brands as $brand)
+                  <option value="{{$brand->brand}}">{{$brand->brand}}</option>
+              @endforeach
             </select>
-          </div>
-          <button class="btn btn_primary btn_full" type="button">Сбросить фильтры</button>
         </div>
+        <button class="btn btn_primary btn_full" >Найти</button>
+
+        <button class="btn btn_primary btn_full" type="clear">Сбросить фильтры</button>
+        </div>
+    </form>
         <div class="catalog__items grid grid_ratio_4">
 
             @foreach ($products as $product)

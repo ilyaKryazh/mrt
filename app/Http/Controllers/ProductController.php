@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Filters\ProductFilter;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -13,11 +14,14 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $products = Product::select('id','name', 'cost','package','img_url')->toBase()->get();
+        $products = Product::select('id','name','brand','cost','package','img_url');
+        $brands = Product::select('brand')->get();
 
-        return view('pages.catalog', ['products' => $products]);
+        $products = (new ProductFilter($request, $products))->apply()->toBase()->get();
+
+        return view('pages.catalog', compact('products','brands', 'request'));
     }
 
     /**
@@ -28,7 +32,10 @@ class ProductController extends Controller
      */
     public function edit(Product $id)
     {
+        if($id){
         $product = Product::findOrFail(1);
         return view('pages.product-details', ['product' => $product]);
+        }
+        return abort(404);
     }
 }
