@@ -39,34 +39,35 @@
                   </div>
                 </div>
                 <ul class="main-menu js-dropdown-menu">
-                  <li class="main-menu__item"><a class="main-menu__link" href="#0">О компании</a>
+                  <li class="main-menu__item"><a class="main-menu__link" href="#">О компании</a>
                     <div class="main-menu__sub">
                       <ul class="main-menu__sub-list">
-                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/product-detail">Товар</a></li>
-                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/about">О компании</a></li>
-                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/helium">Гелий</a></li>
-                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/cryoservice">Криосервис</a></li>
-                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/rf-coil">Радиочастотная катушка</a></li>
-                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/adsorber">Адсорбер</a></li>
-                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/cooling-head">Охлаждающая головка</a></li>
-                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/rf-cell">Радиочастотная клетка</a></li>
-                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/mri-room">Особенности клетки Фарадея для кабинета МРТ</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="main-menu__item"><a class="main-menu__link" href="/catalog">Каталог</a></li>
-                  <li class="main-menu__item"><a class="main-menu__link" href="/service">Сервис</a></li>
-                  <li class="main-menu__item"><a class="main-menu__link" href="/trade-in">trade-in</a></li>
-                  <li class="main-menu__item"><a class="main-menu__link" href="#0">Бизнес</a>
-                    <div class="main-menu__sub">
-                      <ul class="main-menu__sub-list">
-                        <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/business">Бизнес</a></li>
                         <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/activity">Мероприятия</a></li>
                         <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/career">Карьера</a></li>
                       </ul>
                     </div>
                   </li>
-                  <li class="main-menu__item"><a class="main-menu__link" href="/contacts">Контакты</a></li>
+                  <li class="main-menu__item"><a class="main-menu__link" href="/catalog">Каталог</a></li>
+                  <li class="main-menu__item"><a class="main-menu__link" href="#">Сервис</a>
+                    <div class="main-menu__sub">
+                        <ul class="main-menu__sub-list">
+                          <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/service">Сервис</a>
+                          <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/helium">Гелий</a></li>
+                          <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/cryoservice">Криосервис</a></li>
+                          <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/rf-coil">Радиочастотная катушка</a></li>
+                          <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/adsorber">Адсорбер</a></li>
+                          <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/cooling-head">Охлаждающая головка</a></li>
+                          <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/rf-cell">Радиочастотная клетка</a></li>
+                          <li class="main-menu__sub-list-item"><a class="main-menu__sub-list-link" href="/mri-room">Особенности клетки Фарадея для кабинета МРТ</a></li>
+                        </ul>
+                      </div>
+                </li>
+
+                  <li class="main-menu__item"><a class="main-menu__link" href="/trade-in">trade-in</a></li>
+                  <li class="main-menu__item"><a class="main-menu__link" href="#">Лизинг</a></li>
+                  <li class="main-menu__item"><a class="main-menu__link" href="/business">Бизнес</a></li>
+
+                  <li class="main-menu__item"><a class="main-menu__link" href="/contacts">Контакты</a></>
                 </ul>
               </div>
               <div class="main-nav__actions main-nav__contact-us">
