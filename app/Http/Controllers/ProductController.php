@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\Brand;
 use App\Filters\ProductFilter;
 use Illuminate\Http\Request;
 
@@ -16,9 +17,8 @@ class ProductController extends Controller
      */
     public function index(Request $request)
     {
-        $products = Product::select('id','name','brand','cost','package','img_url');
-        $brands = Product::select('brand')->get();
-
+        $products = Product::select('id','name','brand_id','cost','package','img_url');
+        $brands = Brand::all();
         $products = (new ProductFilter($request, $products))->apply()->toBase()->get();
 
         return view('pages.catalog', compact('products','brands', 'request'));

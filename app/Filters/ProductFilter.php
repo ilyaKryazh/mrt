@@ -24,7 +24,7 @@ class ProductFilter
 
     public function brand($val){
         if($val){
-        $this->filter->where('brand', $val);
+        $this->filter->where('brand_id', $val);
         }
     }
 }

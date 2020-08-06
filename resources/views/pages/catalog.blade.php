@@ -19,9 +19,11 @@
           <div class="form-field">
               <form action="/catalog">
             <select class="form-field__field"  name="brand">
-              <option data-placeholder="data-placeholder" >{{$request->brand ?? 'Все бренды'}}</option>
+              <option  value="">Все бренды</option>
               @foreach ($brands as $brand)
-                  <option value="{{$brand->brand}}">{{$brand->brand}}</option>
+                  <option value="{{$brand->id}}"@if ($brand->id == $request->brand)
+                      selected
+                  @endif>{{$brand->name}}</option>
               @endforeach
             </select>
         </div>

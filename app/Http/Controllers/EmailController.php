@@ -7,7 +7,9 @@ class EmailController extends Controller
 {
     public function footerForm(Request $request){
 
-        mail( null , null ,"Новое сообщение из формы обратной связи: Имя: $request->text E-Mail: $request->email Текст сообщения: $request->textarea");
+        $message = "Новое сообщение из формы обратной связи: Имя: $request->text E-Mail: $request->email Текст сообщения: $request->textarea";
+
+        mail( null , null , $message);
         return redirect()->route('contacts');
     }
 }

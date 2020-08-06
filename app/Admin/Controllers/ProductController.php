@@ -3,6 +3,7 @@
 namespace App\Admin\Controllers;
 
 use App\Models\Product;
+use App\Models\Brand;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
@@ -28,7 +29,7 @@ class ProductController extends AdminController
 
         $grid->column('id', __('Id'));
         $grid->column('name', __('Name'));
-        $grid->column('brand', __('Brand'));
+        $grid->column('brand.name', __('Brand'));
         $grid->column('package', __('Package'));
         $grid->column('img_url', __('Img url'));
         $grid->column('year', __('Year'));
@@ -53,7 +54,7 @@ class ProductController extends AdminController
 
         $show->field('id', __('Id'));
         $show->field('name', __('Name'));
-        $show->field('brand', __('Brand'));
+        $show->field('brand.name', __('Brand'));
         $show->field('package', __('Package'));
         $show->field('img_url', __('Img url'));
         $show->field('year', __('Year'));
@@ -86,8 +87,15 @@ class ProductController extends AdminController
         $form = new Form(new Product());
 
         $form->text('name', __('Name'));
-        $form->text('brand', __('Brand'));
         $form->text('package', __('Package'));
+        $form->select('brand_id', __('Brand'))->options(function () {
+            $brands = Brand::all();
+            $result = [];
+            foreach ($brands as $val) {
+                $result += [$val->id => "$val->name"];
+            }
+            return $result;
+        });
         $form->image('img_url', __('Img url'));
         $form->date('year', __('Year'))->format('YYYY');
         $form->decimal('cost', __('Cost'));
