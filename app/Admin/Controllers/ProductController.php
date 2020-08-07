@@ -28,12 +28,13 @@ class ProductController extends AdminController
         $grid = new Grid(new Product());
 
         $grid->column('id', __('Id'));
-        $grid->column('name', __('Name'));
-        $grid->column('brand.name', __('Brand'));
-        $grid->column('package', __('Package'));
-        $grid->column('img_url', __('Img url'));
-        $grid->column('year', __('Year'));
-        $grid->column('cost', __('Cost'));
+        $grid->column('name', __('Имя'));
+        $grid->column('description', __('Описание'));
+        $grid->column('brand.name', __('Бренд'));
+        $grid->column('package', __('Комплект'));
+        $grid->column('img_url', __('Фото'));
+        $grid->column('year', __('Первичная установка (год)'));
+        $grid->column('cost', __('Цена (в млн)'));
 
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
@@ -53,26 +54,26 @@ class ProductController extends AdminController
         $show = new Show(Product::findOrFail($id));
 
         $show->field('id', __('Id'));
-        $show->field('name', __('Name'));
-        $show->field('brand.name', __('Brand'));
-        $show->field('package', __('Package'));
-        $show->field('img_url', __('Img url'));
-        $show->field('year', __('Year'));
-        $show->field('cost', __('Cost'));
-        $show->field('magnit_type', __('Magnit type'));
-        $show->field('magnit_field', __('Magnit field'));
-        $show->field('channels_number', __('Channels number'));
-        $show->field('gradient', __('Gradient'));
-        $show->field('program_level', __('Program level'));
-        $show->field('created_at', __('Created at'));
-        $show->field('updated_at', __('Updated at'));
-        $show->field('description', __('Description'));
-        $show->field('options', __('Options'));
-        $show->field('coil_complect', __('Coil complect'));
-        $show->field('in_complect', __('In complect'));
-        $show->field('climat_gear', __('Climat gear'));
-        $show->field('instalation', __('Instalation'));
-        $show->field('features', __('Features'));
+        $show->field('name', __('Имя'));
+        $show->field('description', __('Описание'));
+        $show->field('brand.name', __('Бренд'));
+        $show->field('img_url', __('Фото'));
+        $show->field('year', __('Первичная установка (год)'));
+        $show->field('cost', __('Цена (в млн)'));
+        $show->field('magnit_type', __('Тип магнита'));
+        $show->field('magnit_field', __('Магнитное поле'));
+        $show->field('channels_number', __('Кол-во каналов'));
+        $show->field('gradient', __('Градиенты'));
+        $show->field('program_level', __('Ур ПО'));
+        $show->field('created_at', __('Добавлено'));
+        $show->field('updated_at', __('Обновлено'));
+
+        $show->field('options', __('Опции ПО'));
+        $show->field('coil_complect', __('Комплект радиочастотных катушек'));
+        $show->field('in_complect', __('В комплекте'));
+        $show->field('climat_gear', __('Климатическое оборудование'));
+        $show->field('instalation', __('Предустановочные работы и пуско-наладка'));
+        $show->field('features', __('Особенности'));
 
         return $show;
     }
@@ -86,9 +87,9 @@ class ProductController extends AdminController
     {
         $form = new Form(new Product());
 
-        $form->text('name', __('Name'));
-        $form->text('package', __('Package'));
-        $form->select('brand_id', __('Brand'))->options(function () {
+        $form->text('name', __('Имя'));
+        $form->text('description', __('Описание'));
+        $form->select('brand_id', __('Бренд'))->options(function () {
             $brands = Brand::all();
             $result = [];
             foreach ($brands as $val) {
@@ -96,21 +97,21 @@ class ProductController extends AdminController
             }
             return $result;
         });
-        $form->image('img_url', __('Img url'));
-        $form->date('year', __('Year'))->format('YYYY');
-        $form->decimal('cost', __('Cost'));
-        $form->text('magnit_type', __('Magnit type'));
-        $form->decimal('magnit_field', __('Magnit field'));
-        $form->number('channels_number', __('Channels number'));
-        $form->number('gradient', __('Gradient'));
-        $form->decimal('program_level', __('Program level'));
-        $form->textarea('description', __('Description'));
-        $form->textarea('options', __('Options'));
-        $form->textarea('coil_complect', __('Coil complect'));
-        $form->textarea('in_complect', __('In complect'));
-        $form->textarea('climat_gear', __('Climat gear'));
-        $form->textarea('instalation', __('Instalation'));
-        $form->textarea('features', __('Features'));
+        $form->image('img_url', __('Фото'));
+        $form->date('year', __('Первичная установка (год)'))->format('YYYY');
+        $form->decimal('cost', __('Цена (в млн)'));
+        $form->text('magnit_type', __('Тип магнита'));
+        $form->decimal('magnit_field', __('Магнитное поле'));
+        $form->number('channels_number', __('Кол-во каналов'));
+        $form->number('gradient', __('Градиенты'));
+        $form->decimal('program_level', __('Ур ПО'));
+
+        $form->textarea('options', __('Опции ПО'));
+        $form->textarea('coil_complect', __('Комплект радиочастотных катушек'));
+        $form->textarea('in_complect', __('В комплекте'));
+        $form->textarea('climat_gear', __('Климатическое оборудование'));
+        $form->textarea('instalation', __('Предустановочные работы и пуско-наладка'));
+        $form->textarea('features', __('Особенности'));
 
         return $form;
     }

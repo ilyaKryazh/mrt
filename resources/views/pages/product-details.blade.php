@@ -9,7 +9,7 @@
     <div class="product-detail">
       <div class="product-detail__main content-container layout layout_screen-tablet_40-60">
         <div class="product-detail__main-content">
-          <h1 class="product-detail__title">{{$product->name}}</h1><span class="product-detail__price">{{$product->cost}} млн.рублей</span><span class="product-detail__state">{{$product->package}}</span>
+        <h1 class="product-detail__title">{{$product->name}} {{$product->description}}</h1><span class="product-detail__price">{{$product->cost}} млн.рублей</span><span class="product-detail__state">{{$product->package}}</span>
           <div class="product-detail__options"><span>Тип магнита {{$product->magnit_type}}</span><span>Магнитное поле {{$product->magnit_field}} Tл</span><span>Количество каналов {{$product->channels_number}}</span><span>Градиенты {{$product->gradient}}</span><span>Уровень программного обеспечения {{$product->program_level}}</span></div>
           <div class="product-detail__options"><span>{{$product->options}}</div>
           <button class="btn btn_primary" type="button">Заказать</button>

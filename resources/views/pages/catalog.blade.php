@@ -44,7 +44,7 @@
             <div class="card__body card__body_text-center">
               <h3 class="card__title card__title_text-upper">{{$product->name}}</h3>
               <p class="card__text">{{$product->cost}} млн.рублей</p>
-              <p class="card__text card__text_accent">{{$product->package}}</p>
+              <p class="card__text card__text_accent">{{$product->description}}</p>
             </div>
           </a>
             @endforeach

@@ -17,7 +17,7 @@ class ProductController extends Controller
      */
     public function index(Request $request)
     {
-        $products = Product::select('id','name','brand_id','cost','package','img_url');
+        $products = Product::select('id','name','brand_id','cost','description','img_url');
         $brands = Brand::all();
         $products = (new ProductFilter($request, $products))->apply()->toBase()->get();
 
