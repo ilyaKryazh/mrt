@@ -10,7 +10,7 @@
       <div class="product-detail__main content-container layout layout_screen-tablet_40-60">
         <div class="product-detail__main-content">
         <h1 class="product-detail__title">{{$product->name}} {{$product->description}}</h1>
-        <span class="product-detail__price">{{$product->cost}}</span>
+        <span class="product-detail__price">{{$product->cost}} млн</span>
         <span class="product-detail__state">{{$product->package}}</span>
           <div class="product-detail__options">
             @if ($product->magnit_type)
