@@ -2,7 +2,11 @@
 @section('content')
 <section class="section">
     <div class="content-container">
-      <div class="breadcrumbs"><a class="breadcrumbs__item" href="#0">Главная</a><a class="breadcrumbs__item" href="#0">Каталог</a><a class="breadcrumbs__item">PHILIPS 3.0T ACHIEVA MRI. КОМПЛЕКТ «ПРЕМИУМ»</a></div>
+      <div class="breadcrumbs">
+        <a class="breadcrumbs__item" href="{{url('/')}}">Главная</a>
+        <a class="breadcrumbs__item" href="{{url('/catalog')}}">Каталог</a>
+        <a class="breadcrumbs__item" href="">{{$product->name}}</a>
+      </div>
     </div>
   </section>
   <section class="section">
@@ -11,7 +15,7 @@
         <div class="product-detail__main-content">
         <h1 class="product-detail__title">{{$product->name}} {{$product->description}}</h1>
         <span class="product-detail__price">{{$product->cost}} млн.рублей</span>
-        <span class="product-detail__state">{{$product->package}}</span>
+        <span class="product-detail__state">Первичная установка {{$product->year}}</span>
           <div class="product-detail__options">
             @if ($product->magnit_type)
                 <span>Тип магнита {{$product->magnit_type}}</span>
@@ -41,18 +45,23 @@
       <div class="content-container">
         <h2 class="product-detail__subtitle">Характиристики</h2>
       </div>
+      @if ($product->options)
       <div class="content-block content-block_border_bottom">
         <div class="content-container layout layout_screen-tablet_40-60">
           <h3>Опции программного обеспечения:</h3>
         <p>{{$product->options}}</p>
         </div>
       </div>
+      @endif
+      @if ($product->coil_complect)
       <div class="content-block content-block_border_bottom">
         <div class="content-container layout layout_screen-tablet_40-60">
           <h3>Комплект радиочастотных катушек:</h3>
           <p>{{$product->coil_complect}}</p>
         </div>
       </div>
+      @endif
+      @if ($product->in_complect)
       <div class="content-block content-block_border_bottom">
         <div class="content-container layout layout_screen-tablet_40-60">
           <h3>В комплекте:</h3>
@@ -61,6 +70,8 @@
           </p>
         </div>
       </div>
+      @endif
+      @if ($product->climat_gear)
       <div class="content-block content-block_border_bottom">
         <div class="content-container layout layout_screen-tablet_40-60">
           <h3>Климатическое оборудование:</h3>
@@ -69,6 +80,8 @@
           </p>
         </div>
       </div>
+      @endif
+      @if ($product->instalation)
       <div class="content-block content-block_border_bottom">
         <div class="content-container layout layout_screen-tablet_40-60">
           <h3>Предустановочные работы и пуско-наладка:</h3>
@@ -77,6 +90,8 @@
           </p>
         </div>
       </div>
+      @endif
+      @if ($product->features)
       <div class="content-block">
         <div class="content-container layout layout_screen-tablet_40-60">
           <h3>Особенности:</h3>
@@ -84,6 +99,8 @@
         </div>
       </div>
     </div>
+      @endif
+
   </section>
   <section class="section section_has-bg space_mb_xl">
     <div class="content-container">
