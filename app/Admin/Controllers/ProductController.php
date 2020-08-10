@@ -31,7 +31,6 @@ class ProductController extends AdminController
         $grid->column('name', __('Имя'));
         $grid->column('description', __('Описание'));
         $grid->column('brand.name', __('Бренд'));
-        $grid->column('package', __('Комплект'));
         $grid->column('img_url', __('Фото'));
         $grid->column('year', __('Первичная установка (год)'));
         $grid->column('cost', __('Цена (в млн)'));
