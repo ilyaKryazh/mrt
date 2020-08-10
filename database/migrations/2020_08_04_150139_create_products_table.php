@@ -19,12 +19,12 @@ class CreateProductsTable extends Migration
             $table->integer('brand_id')->nullable();
             $table->string('description')->nullable();
             $table->string('img_url')->nullable();
-            $table->integer('year')->nullable();
-            $table->decimal('cost', 8, 1)->nullable();
+            $table->string('year')->nullable();
+            $table->string('cost')->nullable();
             $table->string('magnit_type')->nullable();
-            $table->decimal('magnit_field', 8, 1)->nullable();
-            $table->integer('channels_number')->nullable();
-            $table->integer('gradient')->nullable();
+            $table->string('magnit_field')->nullable();
+            $table->string('channels_number')->nullable();
+            $table->string('gradient')->nullable();
             $table->string('program_level')->nullable();
             $table->timestamps();
 

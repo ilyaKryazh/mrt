@@ -9,8 +9,26 @@
     <div class="product-detail">
       <div class="product-detail__main content-container layout layout_screen-tablet_40-60">
         <div class="product-detail__main-content">
-        <h1 class="product-detail__title">{{$product->name}} {{$product->description}}</h1><span class="product-detail__price">{{$product->cost}} млн.рублей</span><span class="product-detail__state">{{$product->package}}</span>
-          <div class="product-detail__options"><span>Тип магнита {{$product->magnit_type}}</span><span>Магнитное поле {{$product->magnit_field}} Tл</span><span>Количество каналов {{$product->channels_number}}</span><span>Градиенты {{$product->gradient}}</span><span>Уровень программного обеспечения {{$product->program_level}}</span></div>
+        <h1 class="product-detail__title">{{$product->name}} {{$product->description}}</h1>
+        <span class="product-detail__price">{{$product->cost}}</span>
+        <span class="product-detail__state">{{$product->package}}</span>
+          <div class="product-detail__options">
+            @if ($product->magnit_type)
+                <span>Тип магнита {{$product->magnit_type}}</span>
+            @endif
+            @if ($product->magnit_field)
+                <span>Магнитное поле {{$product->magnit_field}} Tл</span>
+            @endif
+            @if ($product->channels_number)
+                <span>Количество каналов {{$product->channels_number}}</span>
+            @endif
+            @if ($product->gradient)
+                <span>Градиенты {{$product->gradient}}</span>
+            @endif
+            @if ($product->program_level)
+                <span>Уровень программного обеспечения {{$product->program_level}}</span>
+            @endif
+            </div>
           <div class="product-detail__options"><span>{{$product->garanty}}</span></div>
           <button class="btn btn_primary" type="button">Заказать</button>
         </div>
