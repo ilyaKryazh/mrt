@@ -68,6 +68,7 @@ class ProductController extends AdminController
         $show->field('created_at', __('Добавлено'));
         $show->field('updated_at', __('Обновлено'));
 
+        $show->field('garanty', __('Гарантия'));
         $show->field('options', __('Опции ПО'));
         $show->field('coil_complect', __('Комплект радиочастотных катушек'));
         $show->field('in_complect', __('В комплекте'));
@@ -100,11 +101,13 @@ class ProductController extends AdminController
         $form->image('img_url', __('Фото'));
         $form->date('year', __('Первичная установка (год)'))->format('YYYY');
         $form->decimal('cost', __('Цена (в млн)'));
+
+        $form->textarea('garanty', __('Гарантия'));
         $form->text('magnit_type', __('Тип магнита'));
         $form->decimal('magnit_field', __('Магнитное поле'));
         $form->number('channels_number', __('Кол-во каналов'));
         $form->number('gradient', __('Градиенты'));
-        $form->decimal('program_level', __('Ур ПО'));
+        $form->text('program_level', __('Ур ПО'));
 
         $form->textarea('options', __('Опции ПО'));
         $form->textarea('coil_complect', __('Комплект радиочастотных катушек'));

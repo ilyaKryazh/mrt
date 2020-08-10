@@ -30,10 +30,10 @@ class ProductController extends Controller
      * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function edit(Product $id)
+    public function edit($id)
     {
         if($id){
-        $product = Product::findOrFail(1);
+        $product = Product::findOrFail($id);
         return view('pages.product-details', ['product' => $product]);
         }
         return abort(404);
