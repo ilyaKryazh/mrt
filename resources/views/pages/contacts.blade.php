@@ -30,7 +30,9 @@
             <p>Москва, Ленинский проспект, д. 53, строение 8</p>
           </div>
         </div>
-        <div class="contacts__map"><img src="/assets/img/demo-yandex-map.png" alt=""></div>
+        <div class="contacts__map">
+            <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/?from=api-maps&ll=37.567220%2C55.697330&mode=usermaps&origin=jsapi_2_1_77&um=constructor%3A3mK7_4GCFb3dygXxdtvWsJgrkGRjO76u&utm_medium=mapframe&utm_source=maps&z=16" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты — поиск мест и адресов, городской транспорт</a><iframe src="https://yandex.ru/map-widget/v1/-/CCQpvXreWA" width="1310px" height="450px" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
+        </div>
       </div>
     </div>
   </section>

@@ -88,7 +88,7 @@
           <div class="section__text-block">
             <p>Сервис МРТ  сертифицированными высококвалифицированными инженерами ООО «НПО РТИ», осуществляющих выезд по России и в страны СНГ для оперативного и качественного оказания технического обслуживания</p>
           </div>
-          <button class="btn btn_primary btn_adaptive" type="button">Про сервис</button>
+          <button class="btn btn_primary btn_adaptive" type="button" onclick="location.href='/service'">Про сервис</button>
         </div>
         <div class="section__part"><img src="/assets/img/demo-image.jpg" alt=""></div>
       </div>

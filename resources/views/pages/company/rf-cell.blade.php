@@ -147,7 +147,7 @@
             <li>Скрытая установка панели фильтров во встроенный шкаф.</li>
           </ul>
         </ul>
-        <button class="btn btn_primary btn_adaptive" type="button">Заказать</button>
+        {{-- <button class="btn btn_primary btn_adaptive" type="button">Заказать</button> --}}
       </div>
     </div>
   </section>

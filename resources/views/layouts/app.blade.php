@@ -71,7 +71,7 @@
                 </ul>
               </div>
               <div class="main-nav__actions main-nav__contact-us">
-                <button class="btn btn_primary" type="button"><a class="main-menu__sub-list-link" href="/contacts#footer">СВЯЗАТСЯ С НАМИ</a></button>
+                <button class="btn btn_primary" type="button"><a class="main-menu__sub-list-link" onclick="location.href='/contacts#footer'">СВЯЗАТСЯ С НАМИ</a></button>
               </div>
               <div class="main-nav__burger js-main-menu-open-btn">
                 <button class="btn btn_menu-toggle btn_burger" type="button"><span class="visualli-hidden">Открыть меню</span></button>

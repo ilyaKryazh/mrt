@@ -3,7 +3,8 @@
 <section class="section">
     <div class="content-container">
       <div class="catalog layout layout_row_auto">
-        <div class="catalog__categories grid grid_ratio_4"><a class="card card_short-image" href="#0">
+          {{-- Фильтр по категориям --}}
+        {{-- <div class="catalog__categories grid grid_ratio_4"><a class="card card_short-image" href="#0">
             <div class="card__visual"><img class="card__image" src="/assets/img/demo-image.jpg" alt=""/>
             </div>
             <div class="card__body card__body_text-center">
@@ -14,8 +15,9 @@
             <div class="card__body card__body_text-center">
               <h3 class="card__title card__title_text-upper" href="#0">КТ</h3>
             </div></a>
-        </div>
-        <div class="catalog__filter grid grid_ratio_4">
+        </div> --}}
+        {{-- Фильтр по бренду --}}
+        {{-- <div class="catalog__filter grid grid_ratio_4">
           <div class="form-field">
               <form action="/catalog">
             <select class="form-field__field"  name="brand">
@@ -31,7 +33,7 @@
 
         <button class="btn btn_primary btn_full" type="clear">Сбросить фильтры</button>
         </div>
-    </form>
+    </form>--}}
         <div class="catalog__items grid grid_ratio_4">
 
             @foreach ($products as $product)
@@ -50,9 +52,10 @@
             @endforeach
 
         </div>
-        <div class="catalog__footer">
+        {{-- Кнопка "Загрузить еще" --}}
+        {{-- <div class="catalog__footer">
           <button class="btn btn_secondary btn_adaptive" type="button">Загрузить еще</button>
-        </div>
+        </div> --}}
       </div>
     </div>
   </section>
@@ -64,7 +67,7 @@
           <p class="section__text-intro">НПО РТИ предлагает уникальную услугу на российском рынке МРТ trade-in</p>
           <p>Вы продаете свой томограф компании или рекомендованному компанией покупателю и приобретаете другой МРТ с учетом средств, вырученных от продажи вашего старого томографа</p>
         </div>
-        <button class="btn btn_primary btn_adaptive" type="button">Про Trade-in</button>
+        <button class="btn btn_primary btn_adaptive" type="button" onclick="location.href='/trade-in'">Про Trade-in</button>
       </div>
     </div>
   </section>
