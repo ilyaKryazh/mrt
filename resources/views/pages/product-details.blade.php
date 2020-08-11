@@ -34,7 +34,7 @@
             @endif
             </div>
           <div class="product-detail__options"><span>{{$product->garanty}}</span></div>
-          <button class="btn btn_primary" type="button">Заказать</button>
+          <button class="btn btn_primary" type="button" onclick="location.href='/contacts#footer'">Заказать</button>
         </div>
     <div class="product-detail__main-visual"><img src="{{asset('uploads/'.$product->img_url)}}" alt=""></div>
       </div>
