@@ -111,7 +111,7 @@
         <div>
           <p class="space_mb_s text-color_accent text-weight_700">Особенности клетки Фарадея для кабинета МРТ</p>
           <p class="space_mb_m">Специфическое защитное устройство «клетка Фарадея» было изобретено в 1836 году Майклом Фарадеем, известным английским физиком и химиком. Ее также называют щитом Фарадея. Данная конструкция экранирует внутреннее помещение и все, что в нем находится от любого воздействия внешнего электромагнитного поля. Как правило, это заземленная клетка, покрытая фольгой из меди, которая, …</p>
-          <button class="btn btn_primary btn_adaptive" type="button">Подробнее</button>
+          <button class="btn btn_primary btn_adaptive" type="button" onclick="location.href='/mri-room'">Подробнее</button>
         </div><img src="/assets/img/demo-image.jpg" alt="">
       </div>
     </div>

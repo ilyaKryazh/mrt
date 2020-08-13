@@ -67,7 +67,7 @@
         <div class="textual__container">
           <p>В зависимости от модели томографа и других условий может быть выгоден первый или второй вариант продажи.</p>
           <p>Наш эксперт сможет подсказать вам более удачное решение в каждом конкретном случае: <b>8-800-100-29-70</b> (звонок по России бесплатный)</p>
-          <button class="btn btn_primary btn_adaptive" type="button">Заказать Trade-In</button>
+          <button class="btn btn_primary btn_adaptive" type="button" onclick="location.href='/contacts'">Заказать Trade-In</button>
         </div>
       </div>
     </div>

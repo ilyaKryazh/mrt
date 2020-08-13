@@ -89,7 +89,7 @@
             <p>Запишитесь на бесплатный вебинар от нашего эксперта</p>
             <p class="text-color_accent text-upper text-size_xl text-weight_700">Успешный бизнес в МРТ</p>
             <p class="text-color_accent space_mb_m">от идеи до первых клиентов!</p>
-            <button class="btn btn_primary btn_adaptive" type="button">Записаться</button>
+            <button class="btn btn_primary btn_adaptive" type="button" onclick="location.href='#footer'">Записаться</button>
           </div>
           <div class="video"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HNJz_jS4BdQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         </div>
