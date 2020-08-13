@@ -15,10 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('home');
 Route::post('/emailfooter', 'EmailController@footerForm');
 
-Route::get('/catalog', 'ProductController@index');
+Route::get('/catalog', 'ProductController@index')->name('catalog');
 
 Route::get('/product-detail/{id}','ProductController@edit')->name('details');
 

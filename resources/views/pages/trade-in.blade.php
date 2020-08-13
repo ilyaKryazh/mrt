@@ -2,8 +2,9 @@
 @section('content')
 <section class="section">
     <div class="content-container">
-      <div class="breadcrumbs"><a class="breadcrumbs__item" href="#0">Главная</a><a class="breadcrumbs__item">Trade-In</a></div>
+      <div class="breadcrumbs"><a class="breadcrumbs__item" href="#0">Главная</a><a class="breadcrumbs__item"></a></div>
     </div>
+    {{Breadcrumbs::render('seconds', (object)['name' => 'Trade-In'])}}
   </section>
   <section class="section textual">
     <div class="content-container">

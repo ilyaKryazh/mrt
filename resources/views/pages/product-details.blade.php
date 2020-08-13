@@ -1,12 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <section class="section">
-    <div class="content-container">
-      <div class="breadcrumbs">
-        <a class="breadcrumbs__item" href="{{url('/')}}">Главная</a>
-        <a class="breadcrumbs__item" href="{{url('/catalog')}}">Каталог</a>
-        <a class="breadcrumbs__item" href="">{{$product->name}}</a>
-      </div>
+      {{Breadcrumbs::render('product', $product)}}
     </div>
   </section>
   <section class="section">

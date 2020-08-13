@@ -1,9 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <section class="section">
-    <div class="content-container">
-      <div class="breadcrumbs"><a class="breadcrumbs__item" href="#0">Главная</a><a class="breadcrumbs__item">Особенности клетки Фарадея для кабинета МРТ</a></div>
-    </div>
+    {{Breadcrumbs::render('seconds', (object)['name' => 'Особенности клетки Фарадея для кабинета МРТ'])}}
   </section>
   <section class="section">
     <div class="content-container">

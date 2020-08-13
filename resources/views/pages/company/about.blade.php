@@ -1,9 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <section class="section">
-    <div class="content-container">
-      <div class="breadcrumbs"><a class="breadcrumbs__item" href="#0">Главная</a><a class="breadcrumbs__item">О компании</a></div>
-    </div>
+    {{Breadcrumbs::render('seconds', (object)['name' => 'О компании'])}}
   </section>
   <section class="section">
     <div class="content-container">
