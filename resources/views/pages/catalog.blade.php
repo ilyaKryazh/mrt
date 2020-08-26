@@ -17,11 +17,11 @@
             </div></a>
         </div> --}}
         {{-- Фильтр по бренду --}}
-        {{-- <div class="catalog__filter grid grid_ratio_4">
+        <div class="catalog__filter grid grid_ratio_4">
           <div class="form-field">
               <form action="/catalog">
             <select class="form-field__field"  name="brand">
-              <option  value="">Все бренды</option>
+              <option  value="">Все категории</option>
               @foreach ($brands as $brand)
                   <option value="{{$brand->id}}"@if ($brand->id == $request->brand)
                       selected
@@ -33,7 +33,7 @@
 
         <button class="btn btn_primary btn_full" type="clear">Сбросить фильтры</button>
         </div>
-    </form>--}}
+    </form>
         <div class="catalog__items grid grid_ratio_4">
 
             @foreach ($products as $product)

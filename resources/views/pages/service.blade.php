@@ -6,17 +6,17 @@
   <section class="section">
     <div class="content-container">
       <h1>Сервис</h1>
-      <div class="grid grid_ratio_4"><a class="card card_short-image" href="#0">
+      <div class="grid grid_ratio_4"><a class="card card_short-image" href="/cryoservice">
           <div class="card__visual"><img class="card__image" src="/assets/img/demo-image.jpg" alt=""/>
           </div>
           <div class="card__body card__body_text-center">
             <h3 class="card__title card__title_text-upper" href="#0">Криосервис</h3>
-          </div></a><a class="card card_short-image" href="#0">
+          </div></a><a class="card card_short-image" href="/rf-cell">
           <div class="card__visual"><img class="card__image" src="/assets/img/demo-image.jpg" alt=""/>
           </div>
           <div class="card__body card__body_text-center">
             <h3 class="card__title card__title_text-upper" href="#0">Радиочастотная клетка</h3>
-          </div></a><a class="card card_short-image" href="#0">
+          </div></a><a class="card card_short-image" href="/rf-coil">
           <div class="card__visual"><img class="card__image" src="/assets/img/demo-image.jpg" alt=""/>
           </div>
           <div class="card__body card__body_text-center">

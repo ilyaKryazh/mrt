@@ -15,7 +15,7 @@ class BrandController extends AdminController
      *
      * @var string
      */
-    protected $title = 'Brand';
+    protected $title = 'Category';
 
     /**
      * Make a grid builder.

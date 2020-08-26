@@ -6,13 +6,13 @@
   <section class="section">
     <div class="content-container">
       <h1>Криосервис</h1>
-      <div class="grid grid_ratio_3"><a class="card card_short-image" href="#0">
+      <div class="grid grid_ratio_3"><a class="card card_short-image" href="/adsorber">
           <div class="card__visual"><img class="card__image" src="/assets/img/demo-image.jpg" alt=""/>
           </div>
           <div class="card__body card__body_text-center">
             <h3 class="card__title card__title_text-upper" href="#0">АДСОРБЕР</h3>
             <p class="card__text">Замена адсорбера гелиевого компрессора</p>
-          </div></a><a class="card card_short-image" href="#0">
+          </div></a><a class="card card_short-image" href="/cooling-head">
           <div class="card__visual"><img class="card__image" src="/assets/img/demo-image.jpg" alt=""/>
           </div>
           <div class="card__body card__body_text-center">
